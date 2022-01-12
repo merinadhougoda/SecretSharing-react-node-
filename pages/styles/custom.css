@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 35rem;
+}
+
+.secret-link-btn {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #FFA700;
+    color: whitesmoke;
+    font-weight: bold;
+    border: none;
+}
+
+.secret-link-btn:hover {
+    background-color: #EDCA31;
+    color: whitesmoke;
+    
+}
+
+.secret-link {
+    font-weight: bold;
+    background-color: #EDCA31;
+}
+
+.passphrase {
+    height: 10rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-style: ridge;
+}
+
