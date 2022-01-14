@@ -1,6 +1,6 @@
 import SecretLink from "../components/SecretLink";
 
-export default function Home({ id }) {
+export default function SecretPageLink({ id }) {
   return (
     <>
       <div className="container">

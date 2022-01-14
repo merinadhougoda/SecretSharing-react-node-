@@ -2,5 +2,5 @@ import { atom } from "recoil";
 
 export const timeState = atom({
   key: "timeState",
-  default: "",
+  default: "5 minutes",
 });

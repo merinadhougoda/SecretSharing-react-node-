@@ -1,26 +1,26 @@
 import axios from "axios";
-import { useRecoilValue } from "recoil";
-import { passwordState } from "../components/atoms/passwordAtom";
-import Passphrase from "../components/Passphrase";
+import PassphraseCheck from "../components/PassphraseCheck";
+import SecretMessage from "../components/SecretMessage";
 
-export default function SecretUrl({ SecretBody }) {
-    const passphrase = useRecoilValue(passwordState)
-      return (
-        <>
-          <div className="container">
-            <Passphrase />
-          </div>
-        </>
-      );  
+export default function SecretUrl({SecretPassword}) {
+  return (
+    <>
+    { SecretPassword ? 
+      <PassphraseCheck />
+    :
+      <SecretMessage />
+    }
+    </>
+  );
 }
 
-// export async function getServerSideProps(context) {
-//   const { id } = context.query;
-//   const SecretBody = await axios.get(`http://localhost:3100/secrets/${id}`);
+export async function getServerSideProps(context) {
+  const { id } = context.query;
+  const SecretPassword = await axios.get(`http://localhost:3100/secrets/${id}`);
 
-//   return {
-//     props: {
-//       SecretBody: JSON.parse(JSON.stringify(SecretBody.data.body)),
-//     },
-//   };
-// }
+  return {
+    props: {
+      SecretPassword: JSON.parse(JSON.stringify(SecretPassword.data.password)),
+    },
+  };
+}

@@ -1,6 +1,6 @@
 import { atom } from "recoil";
 
-export const passphraseState = atom ({
-    key: "passpharseState",
-    default:"",
-})
+export const passphraseState = atom({
+  key: "passpharseState",
+  default: "",
+});

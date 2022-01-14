@@ -3,6 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/secrets/[id]": "pages/secrets/[id].js",
-  "/private/[id]": "pages/private/[id].js"
+  "/secrets/[id]": "pages/secrets/[id].js"
 }
