@@ -4,7 +4,7 @@ export default function SecretPageLink({ id }) {
   return (
     <>
       <div className="container">
-        <div className="text-start mt-5 mb-3">          
+        <div className="text-start mt-5 mb-3">
           <h3>Share this link</h3>
         </div>
         <SecretLink id={id} />

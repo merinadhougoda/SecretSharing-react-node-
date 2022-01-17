@@ -30,6 +30,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/private/[id]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/private/[id].js"
+    ],
     "/secrets/[id]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

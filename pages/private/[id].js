@@ -1,17 +1,10 @@
 import axios from "axios";
+
 import PassphraseCheck from "../components/PassphraseCheck";
 import SecretMessage from "../components/SecretMessage";
 
-export default function SecretUrl({SecretPassword}) {
-  return (
-    <>
-    { SecretPassword ? 
-      <PassphraseCheck />
-    :
-      <SecretMessage />
-    }
-    </>
-  );
+export default function SecretUrl({ SecretPassword }) {
+  return <>{SecretPassword ? <PassphraseCheck /> : <SecretMessage />}</>;
 }
 
 export async function getServerSideProps(context) {
